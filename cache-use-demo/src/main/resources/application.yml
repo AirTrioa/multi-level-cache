@@ -1,0 +1,14 @@
+spring:
+  # 两级缓存配置
+  multi-cache:
+    cache-prefix: airtrioa
+    caffeine:
+      expire-after-access: 500000
+    redis:
+      default-expiration: 600000
+#  cache:
+#    cache-names: userIdCache
+  # Redis 配置
+  redis:
+    port: 6379
+    host: 172.28.112.146
